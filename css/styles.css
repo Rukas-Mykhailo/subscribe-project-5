@@ -120,6 +120,10 @@ button {
     border-color: red;
 }
 
+.input-form-email:not(:placeholder-shown):valid {
+    border-color: green;
+}
+
 .button-send {
     display: flex;
     gap: 12px;
