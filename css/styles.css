@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0cbb4;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #0b0803;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+/* ------------------SUBSCRIBE--------------- */
+.subscribe {}
+
+.subscribe-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.sub-left {
+    flex: 1;
+    flex-direction: column;
+    padding: 61.5px 0;
+}
+
+.sub-title {
+    font-family: "Aboreto", sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+}
+
+.sub-text {
+    margin-bottom: 32px;
+}
+
+.sub-form {
+    display: flex;
+}
+
+.label-form-email {
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.input-form-email {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(11, 8, 3, 0.15);
+    width: 339px;
+    height: 44px;
+    background-color: transparent;
+    outline: transparent;
+    margin-right: 16px;
+    font-size: 16px;
+
+}
+
+.input-form-email::placeholder {
+    font-size: 16px;
+    color: rgba(11, 8, 3, 0.6);
+}
+
+.input-form-email:not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+.button-send {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 158px;
+    height: 44px;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6f4e37;
+}
+
+.button-send:focus,
+.button-send:hover {
+    opacity: 0.5;
+}
+
+.svg-send {
+    fill: #fff;
+}
+
+
+.sub-right {
+    flex: 1;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.sub-img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
